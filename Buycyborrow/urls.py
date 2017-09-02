@@ -19,7 +19,7 @@ from django.contrib import admin
 from borrow.views import borrowPageView, borrowView
 from buy.views import buyPageView,buyView
 from home.views import HomePage
-from sell.views import sellView
+#from sell.views import sellView
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
@@ -28,5 +28,5 @@ urlpatterns = [
     url(r'^borrow/(?P<cid>[.\-_\w]+)/$', borrowView.as_view(), name='borrow'),
     url(r'^buy$', buyPageView.as_view(), name='buy-page'),
     url(r'^buy/(?P<cid>[.\-_\w]+)/$', buyView.as_view(), name='buy'),
-    url(r'^sell$',sellView.as_view(),name='sell-view'),
+    #url(r'^sell$',sellView.as_view(),name='sell-view'),
 ]

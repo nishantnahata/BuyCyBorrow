@@ -1,4 +1,4 @@
-from django.shortcuts import render
+"""from django.shortcuts import render
 
 # Create your views here.
 from django.views import View
@@ -12,4 +12,4 @@ class sellView(View):
         form=self.form_class(None)
         return render(request,self.template_name,{'form':form})
 
-    #def post(self,request):
+    #def post(self,request):"""

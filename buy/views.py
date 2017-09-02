@@ -6,10 +6,10 @@ from borrow.models import Cycle
 
 
 class buyPageView(View):
-    template_name = 'buy_page.html'
+    template_name = 'cyclelist.html'
 
     def get(self, request):
-        cycles = Cycle.objects.all().filters(is_borrowed=False)
+        cycles = Cycle.objects.all().filter(is_borrowed=False)
         return render(request, self.template_name, {'cycles': cycles})
 
 

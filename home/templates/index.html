@@ -2,19 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    {% load staticfiles %}
     <title>BYCYBORROW | Go Green</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
     <link href='https://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/css?family=Handlee|Nunito" rel="stylesheet">
     <script
   src="https://code.jquery.com/jquery-3.2.1.min.js"
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
   crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="js.js"></script>
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+    <script src="{% static 'js.js' %}"></script>
 </head>  
 
     
@@ -116,7 +117,7 @@
     <div id="buy">
         <h1>BUY</h1>
         <p> BHAI KHAREEDLE MAI TERKO MAUKA DE RAHA HU BHAI KHAREEDLE MAI TERKO MAUKA DE RAHA HU BHAI KHAREEDLE MAI TERKO MAUKA DE RAHA HU BHAI KHAREEDLE MAI TERKO MAUKA DE RAHA HU BHAI KHAREEDLE MAI TERKO MAUKA DE RAHA HU BHAI KHAREEDLE MAI TERKO MAUKA DE RAHA HU BHAI KHAREEDLE MAI TERKO MAUKA DE RAHA HU.</p>
-        <button class="btn btn-default btn-lg">Buy</button>
+        <a href="{% url 'buy-page' %}"><button class="btn btn-default btn-lg">Buy</button></a>
     </div>
     
     <a name="sell"></a>
@@ -130,7 +131,7 @@
     <div id="rent">
         <h1>RENT</h1>
         <p>FREE ME CYCLE MIL RAHI HAI AISH KAR BHAIJAAN.FREE ME CYCLE MIL RAHI HAI AISH KAR BHAIJAAN.FREE ME CYCLE MIL RAHI HAI AISH KAR BHAIJAAN.FREE ME CYCLE MIL RAHI HAI AISH KAR BHAIJAAN.FREE ME CYCLE MIL RAHI HAI AISH KAR BHAIJAAN.FREE ME CYCLE MIL RAHI HAI AISH KAR BHAIJAAN.FREE ME CYCLE MIL RAHI HAI AISH KAR BHAIJAAN.</p>
-        <button class="btn btn-default btn-lg">Borrow</button>
+        <a href="{% url 'borrow-page' %}"><button class="btn btn-default btn-lg">Borrow</button></a>
     </div>
     
     
@@ -138,9 +139,9 @@
     <footer>
         <div class="footersocial">
             <ul>
-                <a href="#"><li><img src="images/fb.png" title="Facebook"></li></a>
-                <a href="#"><li><img src="images/twitter.png" title="Twitter"></li></a>
-                <a href="#"><li><img src="images/youtube.png" title="Youtube"></li></a>
+                <a href="#"><li><img src="{% static 'images/fb.png' %}" title="Facebook"></li></a>
+                <a href="#"><li><img src="{% static 'images/twitter.png' %}" title="Twitter"></li></a>
+                <a href="#"><li><img src="{% static 'images/youtube.png' %}" title="Youtube"></li></a>
             </ul>
         </div>
         <div class="footerlinks">
@@ -154,7 +155,7 @@
             </ul>
         
         </div>
-        <span>COPYRIGHT &copy; 2017 BYCYBORROW - CRAFTED WITH&nbsp;<img src="images/heart.png"id="heart" title="love">&nbsp;&nbsp;--By BYCYBORROW</span>
+        <span>COPYRIGHT &copy; 2017 BYCYBORROW - CRAFTED WITH&nbsp;<img src="{% static 'images/heart.png' %}"id="heart" title="love">&nbsp;&nbsp;--By BYCYBORROW</span>
     
     </footer>
 </body>

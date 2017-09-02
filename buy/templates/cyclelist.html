@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% load staticfiles %}
+    <title>BYCYBORROW | Go Green</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+    <link href='https://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Handlee|Nunito" rel="stylesheet">
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+    <script src="{% static 'js.js' %}"></script>
+</head>  
+
+    
+<body>
+    
+<nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button class="navbar-toggle" data-toggle="collapse" data-target="#topNavBar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#" style="font-family:Satisfy;">BYCYBORROW</a>
+            </div>
+
+            
+            <div class="collapse navbar-collapse" id="topNavBar">
+                <ul class="nav navbar-nav" style="margin-left:30px;">
+                    <li class="active">
+                        <a href="{% url 'buy-page' %}">
+                            <span class="glyphicon glyphicon-tent" aria-hidden="true"></span>&nbsp; Buy
+                        </a>
+                    </li>
+                    <li class="#">
+                        <a href="#aboutus">
+                            <span class="glyphicon glyphicon-qrcode" aria-hidden="true"></span>&nbsp; Sell
+                        </a>
+                    </li>
+                    <li class="#">
+                        <a href="{% url 'borrow-page' %}">
+                            <span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span>&nbsp; Borrow
+                        </a>
+                    </li>
+<!--
+                    <li class="#">
+                        <a href="#bills">
+                            <span class="glyphicon glyphicon-credit-card" aria-hidden="true"></span>&nbsp; GIFT US
+                        </a>
+                    </li>
+-->
+                </ul>
+
+                
+
+                <ul class="nav navbar-nav navbar-right">
+                    
+                    
+<!--
+                    <li class="">
+                        <a href="">
+                            <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>&nbsp; ADD EXPENSES
+                        </a>
+                    </li>
+-->
+<!--                    else :-->
+<!--
+                    <li class="">
+                        <a href="">
+                            <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>&nbsp; LOGIN / SIGNUP
+                        </a>
+                    </li>
+-->
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    
+    <div class="albums-container container-fluid">
+
+        <!-- Albums -->
+        <div class="row">
+            <div class="col-sm-12">
+                <h3>BYCYBORROW'S CYCLES</h3>
+            </div>
+                    <div class="col-sm-4 col-lg-2">
+                        <div class="thumbnail">
+                            <a href="#">
+                                <img src="{% static 'images/bike1.jpeg' %}" class="img-responsive">
+                            </a>
+                            <div class="caption">
+                                <h2>Bike Name</h2>
+                                <h4>Bike Model</h4>
+                                
+                                <!-- View Details -->
+                                <a href="#" class="btn btn-primary" role="button">Buy</a>
+                            </div>
+                        </div>
+                    </div>
+<!--                    {% cycle '' '' '' '' '' '<div class="clearfix visible-lg"></div>' %}-->
+                
+                <div class="col-sm-12">
+                    <br>
+                    <a href="#">
+<!--
+                        <button type="button" class="btn btn-success">
+                            <span class="glyphicon glyphicon-plus"></span>&nbsp; Add an Album
+                        </button>
+-->
+                    </a>
+                </div>
+<!--            -->
+        </div>
+    </div>
+    
+    <footer>
+        <div class="footersocial">
+            <ul>
+                <a href="#"><li><img src="{% static 'images/fb.png' %}" title="Facebook"></li></a>
+                <a href="#"><li><img src="{% static 'images/twitter.png' %}" title="Twitter"></li></a>
+                <a href="#"><li><img src="{% static 'images/youtube.png' %}" title="Youtube"></li></a>
+            </ul>
+        </div>
+        <div class="footerlinks">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Buy</a></li>
+                <li><a href="#">Sell</a></li>
+                <li><a href="#">Borrow</a></li>
+                <li><a href="#">Donate Us</a></li>
+            </ul>
+
+        </div>
+        <span>COPYRIGHT &copy; 2017 BYCYBORROW - CRAFTED WITH&nbsp;<img src="{% static 'images/heart.png' %}"id="heart" title="love">&nbsp;&nbsp;--By BYCYBORROW</span>
+    
+    </footer>
+    
+</body>
