@@ -1,0 +1,118 @@
+body{
+    background: url(images/backt.jpg);
+    margin: 0;
+}
+.slide1{
+  background-image: url('images/bkc3.jpg');
+  height: 750px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  
+}
+.slide2{
+  background-image: url('images/bkc2.jpg');
+  height: 750px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.slide3{
+  background-image: url('images/bkc1.jpg');
+  height: 750px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.carousel-caption h1{
+  font-size: 5.4em;
+  font-family: 'Pacifico', cursive;
+  padding-bottom: .4em;
+}
+.carousel-caption p{
+  font-size: 2em;
+}
+/*---------------beech wala-----------*/
+
+#aboutus{
+    margin: 0;
+    background: url(images/aboutus.jpg) no-repeat;
+    height: 750px;
+    padding: 20px;
+    font-family: cursive;
+}
+#rent{
+    margin: 0;
+    background: url(images/buy.jpg) no-repeat;
+    height: 750px;
+    padding: 20px;
+    font-family: cursive;
+}
+#buy{
+    margin: 0;
+    background: url(images/rent.jpg) no-repeat;
+    height: 750px;
+    padding: 20px;
+    font-family: cursive;
+}
+#sell{
+    margin: 0;
+    background: url(images/sell.jpg) no-repeat -100px -300px;;
+    height: 750px;
+    padding: 20px;
+    font-family: cursive;
+}
+#aboutus h1,#rent h1,#buy h1,#sell h1{
+    color: white;
+    text-align: center;
+    font-size: 5em;
+}
+#aboutus p,#rent p,#buy p,#sell p{
+    color: white;
+    line-height: 2.5;
+    font-weight: 700;
+    font-size: 1.3em;
+}
+
+
+/*---------------footer---------------*/
+
+footer{
+    background-color:#242E33;
+    min-height: 220px;
+    color: white;
+    text-align: center;
+}
+
+#heart{
+    width:13px; 
+    height:13px ;
+}
+
+footer .footersocial ul,footer .footerlinks ul{
+    list-style: none;
+}
+footer .footersocial ul li{
+    
+    padding: 10px;
+    display: inline;
+}
+
+footer .footersocial ul a li img{
+    margin-top: 10px;
+    width:20px ;
+    height:20px ;
+}
+footer span{
+    font-family: cursive;
+}
+footer .footerlinks ul li a{
+    color:white;
+    padding: 5px;
+    text-decoration: none;
+}
+/*--------doosra page hai ye------------*/
+
+nav{
+    border-radius: 0;
+}
