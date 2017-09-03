@@ -42,3 +42,5 @@ Now a days gyms are installed in every park if we install dynamo to every gym ma
 
 We can also collaborate with metro cycle providing services.
 
+![home1](https://github.com/nishantcoder97/BuyCyBorrow/blob/master/screenshots/home1.png)
+![home2](https://github.com/nishantcoder97/BuyCyBorrow/blob/master/screenshots/home2.png)
