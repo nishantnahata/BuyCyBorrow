@@ -36,7 +36,7 @@
             <div class="collapse navbar-collapse" id="topNavBar">
                 <ul class="nav navbar-nav" style="margin-left:30px;">
                     <li class="active">
-                        <a href="{% url 'borrow-page' %}">
+                        <a href="{% url 'buy-page' %}">
                             <span class="glyphicon glyphicon-tent" aria-hidden="true"></span>&nbsp; Buy
                         </a>
                     </li>
@@ -59,11 +59,11 @@
 -->
                 </ul>
 
-                
+
 
                 <ul class="nav navbar-nav navbar-right">
-                    
-                    
+
+
 <!--
                     <li class="">
                         <a href="">
@@ -79,13 +79,13 @@
                         </a>
                     </li>
 -->
-                    
+
                 </ul>
             </div>
         </div>
     </nav>
-    
-    
+
+
     <div class="albums-container container-fluid">
 
         <!-- Albums -->
@@ -97,19 +97,19 @@
                     <div class="col-sm-4 col-lg-2">
                         <div class="thumbnail">
                             <a href="{% url 'borrow' cycle.id %}">
-                                <img src="{% static cycle.photo.url %}" class="img-responsive">
+                                <img src="{{ cycle.photo.url }}" class="img-responsive">
                             </a>
                             <div class="caption">
-                                <h2>Bike Name</h2>
-                                <h4>Bike Model</h4>
-                                
+                                <h2>{{ cycle.name }}</h2>
+                                <p>{{ cycle.description }}</p>
+
                                 <!-- View Details -->
-                                <a href="#" class="btn btn-primary" role="button">Buy</a>
+                                <a href="{% url 'borrow' cycle.id %}" class="btn btn-primary" role="button">Borrow</a>
                             </div>
                         </div>
                     </div>
 <!--                    {% cycle '' '' '' '' '' '<div class="clearfix visible-lg"></div>' %}-->
-                
+
                 <div class="col-sm-12">
                     <br>
                     <a href="#">
@@ -121,10 +121,11 @@
                     </a>
                 </div>
 <!--            -->
+
         </div>
         {% endfor %}
     </div>
-    
+
     <footer>
         <div class="footersocial">
             <ul>

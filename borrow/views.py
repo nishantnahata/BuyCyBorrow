@@ -5,7 +5,7 @@ from borrow.models import Cycle
 
 
 class borrowPageView(View):
-    template_name = 'borrow_page.html'
+    template_name = 'borrow/cyclelist.html'
 
     def get(self, request):
         cycles = Cycle.objects.all().filter(is_borrowed=False)
@@ -13,7 +13,7 @@ class borrowPageView(View):
 
 
 class borrowView(View):
-    template_name = 'borrow.html'
+    template_name = 'borrow/bicycledetail.html'
 
     def get(self, request, cid):
         cycle = Cycle.objects.get(pk=cid)
@@ -22,4 +22,4 @@ class borrowView(View):
     def post(self, request, cid):
         cycle = Cycle.objects.get(pk=cid)
         cycle.set_borrowed()
-        return render(request,'borrowed.html',{'cycle':cycle})
+        return render(request,self.template_name,{'cycle':cycle,'success': True})

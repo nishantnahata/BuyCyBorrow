@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'home.apps.HomeConfig',
     'buy.apps.BuyConfig',
     'borrow.apps.BorrowConfig',
+    'sell.apps.SellConfig',
 ]
 
 MIDDLEWARE = [

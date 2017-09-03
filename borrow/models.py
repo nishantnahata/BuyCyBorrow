@@ -16,3 +16,7 @@ class Cycle(models.Model):
 
     def set_borrowed(self):
         self.is_borrowed = True
+
+    @property
+    def get_image_path(self):
+        return os.path.join('templates/../static/images', str(self.id), self.photo.name)

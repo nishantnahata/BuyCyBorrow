@@ -89,26 +89,27 @@
     <div class="albums-container container-fluid">
 
         <!-- Albums -->
+        {% for cycle in cycles %}
         <div class="row">
             <div class="col-sm-12">
                 <h3>BYCYBORROW'S CYCLES</h3>
             </div>
                     <div class="col-sm-4 col-lg-2">
                         <div class="thumbnail">
-                            <a href="#">
-                                <img src="{% static 'images/bike1.jpeg' %}" class="img-responsive">
+                            <a href="{% url 'buy' cycle.id %}">
+                                <img src="{{ cycle.photo.url }}" class="img-responsive">
                             </a>
                             <div class="caption">
-                                <h2>Bike Name</h2>
-                                <h4>Bike Model</h4>
-                                
+                                <h2>{{ cycle.name }}</h2>
+                                <p>{{ cycle.description }}</p>
+
                                 <!-- View Details -->
-                                <a href="#" class="btn btn-primary" role="button">Buy</a>
+                                <a href="{% url 'buy' cycle.id %}" class="btn btn-primary" role="button">Buy</a>
                             </div>
                         </div>
                     </div>
 <!--                    {% cycle '' '' '' '' '' '<div class="clearfix visible-lg"></div>' %}-->
-                
+
                 <div class="col-sm-12">
                     <br>
                     <a href="#">
@@ -121,6 +122,7 @@
                 </div>
 <!--            -->
         </div>
+        {% endfor %}
     </div>
     
     <footer>

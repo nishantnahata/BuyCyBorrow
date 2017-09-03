@@ -14,7 +14,7 @@ class buyPageView(View):
 
 
 class buyView(View):
-    template_name = 'buy.html'
+    template_name = 'bicycledetail.html'
 
     def get (self,request,cid):
         cycle=Cycle.objects.get(pk=cid)
@@ -23,4 +23,4 @@ class buyView(View):
     def post (self,request,cid):
         cycle=Cycle.objects.get(pk=cid)
         cycle.set_borrowed()
-        return render(request,self.template_name,{'cycle':cycle})
+        return render(request,self.template_name,{'cycle':cycle, 'success': True})

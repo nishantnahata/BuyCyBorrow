@@ -43,24 +43,24 @@ body{
 }
 #rent{
     margin: 0;
-    background: url(images/buy.jpg) no-repeat;
+    background: url(images/buy.jpg) no-repeat 50px 0px;
     height: 750px;
-    padding: 20px;
+    /*padding: 20px;*/
     font-family: cursive;
 }
 #buy{
     margin: 0;
     background: url(images/rent.jpg) no-repeat;
     height: 750px;
-    padding: 20px;
+    /*padding: 20px;*/
     font-family: cursive;
 }
 #sell{
     margin: 0;
-    background: url(images/sell.jpg) no-repeat -100px -300px;;
+    background: url(images/sell.jpg) no-repeat 0px -300px;;
     height: 750px;
-    padding: 20px;
-    font-family: cursive;
+    /*padding: 20px;*/
+    font-family:cursive;
 }
 #aboutus h1,#rent h1,#buy h1,#sell h1{
     color: white;

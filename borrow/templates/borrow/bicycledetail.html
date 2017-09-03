@@ -125,6 +125,14 @@
                                     <a href="#" class="btn-favorite">10 Km</a>
                                 </td>
                             </tr>
+                            <tr>
+                            <td>
+                                             <form action="" method="post">
+                                                 {% csrf_token %}
+    <button type="submit" class="btn btn-success">Borrow</button>
+</form>
+                            </td>
+                        </tr>
                         </tbody>
                     </table>
 
@@ -165,7 +173,7 @@
             </ul>
 
         </div>
-        <span>COPYRIGHT &copy; 2017 BYCYBORROW - CRAFTED WITH&nbsp;<img src="{% static 'images/heart.png' %}"id="heart" title="love">&nbsp;&nbsp;--By BYCYBORROW</span>
+        <span>COPYRIGHT &copy; 2017 BYCYBORROW - CRAFTED WITH&nbsp;<img src="{% static 'images/heart.png' %}" id="heart" title="love">&nbsp;&nbsp;--By BYCYBORROW</span>
     
     </footer>
     
