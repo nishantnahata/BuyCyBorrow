@@ -44,3 +44,4 @@ We can also collaborate with metro cycle providing services.
 
 ![home1](https://github.com/nishantcoder97/BuyCyBorrow/blob/master/screenshots/home1.png)
 ![home2](https://github.com/nishantcoder97/BuyCyBorrow/blob/master/screenshots/home2.png)
+![buy](https://github.com/nishantcoder97/BuyCyBorrow/blob/master/screenshots/buy.png)
