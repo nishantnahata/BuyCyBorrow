@@ -59,11 +59,11 @@
 -->
                 </ul>
 
-                
+
 
                 <ul class="nav navbar-nav navbar-right">
-                    
-                    
+
+
 <!--
                     <li class="">
                         <a href="">
@@ -79,52 +79,39 @@
                         </a>
                     </li>
 -->
-                    
+
                 </ul>
             </div>
         </div>
     </nav>
-    
-    
+
+
     <div class="albums-container container-fluid">
 
         <!-- Albums -->
-        {% for cycle in cycles %}
+
         <div class="row">
             <div class="col-sm-12">
                 <h3>BYCYBORROW'S CYCLES</h3>
             </div>
+            {% for cycle in cycles %}
                     <div class="col-sm-4 col-lg-2">
                         <div class="thumbnail">
                             <a href="{% url 'buy' cycle.id %}">
-                                <img src="{{ cycle.photo.url }}" class="img-responsive">
+                                <img src="{% static carx.photo.url %}" class="img-responsive">
                             </a>
                             <div class="caption">
                                 <h2>{{ cycle.name }}</h2>
                                 <p>{{ cycle.description }}</p>
-
-                                <!-- View Details -->
-                                <a href="{% url 'buy' cycle.id %}" class="btn btn-primary" role="button">Buy</a>
+                                <a href="{% url 'buy' cycle.id %}" class="btn btn-primary" role="button">Borrow</a>
                             </div>
                         </div>
                     </div>
-<!--                    {% cycle '' '' '' '' '' '<div class="clearfix visible-lg"></div>' %}-->
-
-                <div class="col-sm-12">
-                    <br>
-                    <a href="#">
-<!--
-                        <button type="button" class="btn btn-success">
-                            <span class="glyphicon glyphicon-plus"></span>&nbsp; Add an Album
-                        </button>
--->
-                    </a>
-                </div>
-<!--            -->
+            {% endfor %}
         </div>
-        {% endfor %}
+
     </div>
-    
+
     <footer>
         <div class="footersocial">
             <ul>
